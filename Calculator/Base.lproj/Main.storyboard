@@ -1,408 +1,374 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpH-MB-tI8" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="9" y="442" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="7">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBu-2l-qqJ" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="111" y="442" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="8">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Na-TL-UeS" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="213" y="442" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="9">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-DU-3bv" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="9" y="544" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="4">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyJ-En-Kgm" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="111" y="544" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="5">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kD-Em-5VV" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="213" y="544" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="6">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPV-Oi-PEo" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="9" y="646" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTS-3c-hY7" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="111" y="646" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="2">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkb-yL-jim" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="213" y="646" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="3">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwe-fd-Y26" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="9" y="748" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title=".">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgL-Lf-CFt" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="111" y="748" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X61-2c-yCh" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="213" y="748" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="±">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdE-zI-sb0" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315" y="442" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="x">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrA-46-gQI" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="9" y="340" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="C">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjZ-7A-L5L" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="111" y="341" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="⌫">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuM-be-qQI" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="213" y="341" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="%">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-8v-PLd" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315" y="341" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.67450980390000004" green="0.29411764709999999" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="÷">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvI-YK-Rpb" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315" y="544" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="-">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMu-dV-4PO" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315" y="646" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUo-s4-P5q" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315" y="748" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.29803921568627451" green="0.47843137254901957" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="=">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TW-zg-TxN">
-                                <rect key="frame" x="20" y="237" width="374" height="69"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0kw-j4-IEF">
+                                <rect key="frame" x="9" y="44" width="405" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgv-RW-87P">
+                                        <rect key="frame" x="0.0" y="0.0" width="405" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TW-zg-TxN">
+                                                <rect key="frame" x="20" y="0.0" width="365" height="128"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="9TW-zg-TxN" secondAttribute="bottom" id="8M8-yE-VEx"/>
+                                            <constraint firstAttribute="trailing" secondItem="9TW-zg-TxN" secondAttribute="trailing" constant="20" id="B5b-48-5Tb"/>
+                                            <constraint firstItem="9TW-zg-TxN" firstAttribute="leading" secondItem="sgv-RW-87P" secondAttribute="leading" constant="20" id="U50-5x-cw4"/>
+                                            <constraint firstItem="9TW-zg-TxN" firstAttribute="top" secondItem="sgv-RW-87P" secondAttribute="top" id="w5T-GW-umN"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BRY-d2-fn9">
+                                        <rect key="frame" x="0.0" y="138" width="405" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpH-MB-tI8" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.54509803921568623" green="0.23529411764705882" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBu-2l-qqJ" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="104.5" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="⌫">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Na-TL-UeS" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="208.5" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="%">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdE-zI-sb0" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="313" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="÷">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" id="KsY-Vf-4iE">
+                                        <rect key="frame" x="0.0" y="276" width="405" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WF7-ZZ-tDX" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t9-Hp-1xu" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="104.5" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH3-fW-fFn" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="208.5" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcY-F6-Dgs" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="313" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.54509803921568623" green="0.23529411764705882" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="x">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="bai-eJ-3Kr"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Xf2-wc-PPh">
+                                        <rect key="frame" x="0.0" y="414" width="405" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-DU-3bv" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyJ-En-Kgm" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="104.5" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kD-Em-5VV" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="208.5" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvI-YK-Rpb" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="313" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="f61-ip-qWE">
+                                        <rect key="frame" x="0.0" y="552" width="405" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPV-Oi-PEo" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTS-3c-hY7" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="104.5" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkb-yL-jim" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="208.5" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMu-dV-4PO" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="313" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.67450980392156867" green="0.29411764705882354" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1aA-As-Vwi">
+                                        <rect key="frame" x="0.0" y="690" width="405" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwe-fd-Y26" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgL-Lf-CFt" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="104.5" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X61-2c-yCh" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="208.5" y="0.0" width="92.5" height="128"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="±">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUo-s4-P5q" customClass="RoundButtonShadow" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="313" y="0.0" width="92" height="128"/>
+                                                <color key="backgroundColor" red="0.29803921568627451" green="0.47843137254901957" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PdE-zI-sb0" firstAttribute="trailing" secondItem="zvI-YK-Rpb" secondAttribute="trailing" id="0Zo-tM-XhE"/>
-                            <constraint firstItem="MrA-46-gQI" firstAttribute="trailing" secondItem="HpH-MB-tI8" secondAttribute="trailing" id="0pq-hJ-VWN"/>
-                            <constraint firstItem="fD8-8v-PLd" firstAttribute="top" secondItem="9TW-zg-TxN" secondAttribute="bottom" constant="35" id="2jV-rj-Hm2"/>
-                            <constraint firstItem="sTS-3c-hY7" firstAttribute="top" secondItem="Zkb-yL-jim" secondAttribute="top" id="3JT-as-q5C"/>
-                            <constraint firstItem="fD8-8v-PLd" firstAttribute="leading" secondItem="PdE-zI-sb0" secondAttribute="leading" id="4AF-Ma-qY2"/>
-                            <constraint firstItem="6kD-Em-5VV" firstAttribute="trailing" secondItem="Zkb-yL-jim" secondAttribute="trailing" id="5DR-6N-JG4"/>
-                            <constraint firstItem="nuM-be-qQI" firstAttribute="firstBaseline" secondItem="MrA-46-gQI" secondAttribute="baseline" id="5SB-Db-NUQ"/>
-                            <constraint firstItem="0Na-TL-UeS" firstAttribute="trailing" secondItem="6kD-Em-5VV" secondAttribute="trailing" id="5Z0-Sb-hcQ"/>
-                            <constraint firstItem="qyJ-En-Kgm" firstAttribute="firstBaseline" secondItem="6kD-Em-5VV" secondAttribute="firstBaseline" id="6mH-Ya-sQ8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fD8-8v-PLd" secondAttribute="trailingMargin" id="7BL-Iz-yhu"/>
-                            <constraint firstItem="qyJ-En-Kgm" firstAttribute="top" secondItem="6kD-Em-5VV" secondAttribute="top" id="8et-vA-Hea"/>
-                            <constraint firstItem="nuM-be-qQI" firstAttribute="leading" secondItem="0Na-TL-UeS" secondAttribute="leading" id="8kt-7a-1lF"/>
-                            <constraint firstItem="XMu-dV-4PO" firstAttribute="leading" secondItem="jUo-s4-P5q" secondAttribute="leading" id="8yl-cA-Fyo"/>
-                            <constraint firstItem="JBu-2l-qqJ" firstAttribute="firstBaseline" secondItem="0Na-TL-UeS" secondAttribute="firstBaseline" id="BcI-AN-Lmu"/>
-                            <constraint firstItem="UgL-Lf-CFt" firstAttribute="baseline" secondItem="jUo-s4-P5q" secondAttribute="baseline" id="Cc7-fa-1oC"/>
-                            <constraint firstItem="Zkb-yL-jim" firstAttribute="trailing" secondItem="X61-2c-yCh" secondAttribute="trailing" id="Cg8-JH-PbS"/>
-                            <constraint firstItem="zvI-YK-Rpb" firstAttribute="trailing" secondItem="XMu-dV-4PO" secondAttribute="trailing" id="Dko-wk-1X5"/>
-                            <constraint firstItem="mPV-Oi-PEo" firstAttribute="top" secondItem="YMb-DU-3bv" secondAttribute="bottom" constant="12" id="F64-Zp-Uph"/>
-                            <constraint firstItem="xjZ-7A-L5L" firstAttribute="leading" secondItem="JBu-2l-qqJ" secondAttribute="leading" id="FKv-4q-9MG"/>
-                            <constraint firstItem="nuM-be-qQI" firstAttribute="trailing" secondItem="0Na-TL-UeS" secondAttribute="trailing" id="Fn2-Jy-OKL"/>
-                            <constraint firstItem="MrA-46-gQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="Fuq-Zp-hGK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fD8-8v-PLd" secondAttribute="trailing" constant="9" id="HFI-Tv-aUS"/>
-                            <constraint firstItem="JBu-2l-qqJ" firstAttribute="leading" secondItem="qyJ-En-Kgm" secondAttribute="leading" id="JgE-c7-FPo"/>
-                            <constraint firstItem="6kD-Em-5VV" firstAttribute="top" secondItem="zvI-YK-Rpb" secondAttribute="top" id="JiI-Qa-Teo"/>
-                            <constraint firstItem="X61-2c-yCh" firstAttribute="top" secondItem="jUo-s4-P5q" secondAttribute="top" id="KUY-CE-b3w"/>
-                            <constraint firstItem="sTS-3c-hY7" firstAttribute="firstBaseline" secondItem="Zkb-yL-jim" secondAttribute="firstBaseline" id="LSV-VV-zVu"/>
-                            <constraint firstItem="UgL-Lf-CFt" firstAttribute="bottom" secondItem="X61-2c-yCh" secondAttribute="bottom" id="Ldz-0v-Gyt"/>
-                            <constraint firstItem="6kD-Em-5VV" firstAttribute="firstBaseline" secondItem="zvI-YK-Rpb" secondAttribute="firstBaseline" id="Lgm-ru-nSW"/>
-                            <constraint firstItem="HpH-MB-tI8" firstAttribute="trailing" secondItem="YMb-DU-3bv" secondAttribute="trailing" id="Lti-si-pbE"/>
-                            <constraint firstItem="Zkb-yL-jim" firstAttribute="top" secondItem="XMu-dV-4PO" secondAttribute="top" id="MRY-I0-sD9"/>
-                            <constraint firstItem="fD8-8v-PLd" firstAttribute="top" secondItem="9TW-zg-TxN" secondAttribute="bottom" constant="35" id="N1R-ir-x5j"/>
-                            <constraint firstItem="YMb-DU-3bv" firstAttribute="leading" secondItem="mPV-Oi-PEo" secondAttribute="leading" id="NSz-oQ-U4g"/>
-                            <constraint firstItem="0Na-TL-UeS" firstAttribute="top" secondItem="PdE-zI-sb0" secondAttribute="top" id="NxD-Pv-dRi"/>
-                            <constraint firstItem="sTS-3c-hY7" firstAttribute="leading" secondItem="UgL-Lf-CFt" secondAttribute="leading" id="O9F-go-UVs"/>
-                            <constraint firstItem="YMb-DU-3bv" firstAttribute="baseline" secondItem="qyJ-En-Kgm" secondAttribute="baseline" id="P3i-BR-rw0"/>
-                            <constraint firstItem="mPV-Oi-PEo" firstAttribute="top" secondItem="sTS-3c-hY7" secondAttribute="top" id="Pp3-7V-iEE"/>
-                            <constraint firstItem="PdE-zI-sb0" firstAttribute="top" secondItem="fD8-8v-PLd" secondAttribute="bottom" constant="11" id="PsW-3J-Svs"/>
-                            <constraint firstItem="Zkb-yL-jim" firstAttribute="leading" secondItem="X61-2c-yCh" secondAttribute="leading" id="RNz-L9-0lp"/>
-                            <constraint firstItem="MrA-46-gQI" firstAttribute="leading" secondItem="HpH-MB-tI8" secondAttribute="leading" id="RWw-75-hnI"/>
-                            <constraint firstItem="mPV-Oi-PEo" firstAttribute="baseline" secondItem="sTS-3c-hY7" secondAttribute="baseline" id="TFv-zO-RJE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iwe-fd-Y26" secondAttribute="bottom" constant="24" id="TR7-Hg-Gik"/>
-                            <constraint firstItem="6kD-Em-5VV" firstAttribute="leading" secondItem="Zkb-yL-jim" secondAttribute="leading" id="TUz-WE-0ry"/>
-                            <constraint firstItem="YMb-DU-3bv" firstAttribute="trailing" secondItem="mPV-Oi-PEo" secondAttribute="trailing" id="UYv-UV-7GS"/>
-                            <constraint firstItem="JBu-2l-qqJ" firstAttribute="top" secondItem="0Na-TL-UeS" secondAttribute="top" id="Uh9-jc-FTP"/>
-                            <constraint firstItem="xjZ-7A-L5L" firstAttribute="top" secondItem="nuM-be-qQI" secondAttribute="top" id="VTa-uq-g0E"/>
-                            <constraint firstItem="xjZ-7A-L5L" firstAttribute="bottom" secondItem="nuM-be-qQI" secondAttribute="bottom" id="Wqc-Xf-hKc"/>
-                            <constraint firstItem="YMb-DU-3bv" firstAttribute="top" secondItem="qyJ-En-Kgm" secondAttribute="top" id="ZLF-sL-Bfx"/>
-                            <constraint firstItem="sTS-3c-hY7" firstAttribute="baseline" secondItem="Zkb-yL-jim" secondAttribute="baseline" id="aOR-Tw-fdC"/>
-                            <constraint firstItem="HpH-MB-tI8" firstAttribute="baseline" secondItem="JBu-2l-qqJ" secondAttribute="baseline" id="aau-gx-ley"/>
-                            <constraint firstItem="HpH-MB-tI8" firstAttribute="top" secondItem="JBu-2l-qqJ" secondAttribute="top" id="bbI-Cc-bm7"/>
-                            <constraint firstItem="fD8-8v-PLd" firstAttribute="trailing" secondItem="PdE-zI-sb0" secondAttribute="trailing" id="bvD-gw-Q18"/>
-                            <constraint firstItem="0Na-TL-UeS" firstAttribute="leading" secondItem="6kD-Em-5VV" secondAttribute="leading" id="c3m-wt-XuC"/>
-                            <constraint firstItem="Zkb-yL-jim" firstAttribute="firstBaseline" secondItem="XMu-dV-4PO" secondAttribute="firstBaseline" id="cJM-jh-V0w"/>
-                            <constraint firstItem="JBu-2l-qqJ" firstAttribute="trailing" secondItem="qyJ-En-Kgm" secondAttribute="trailing" id="cww-1g-QiV"/>
-                            <constraint firstItem="0Na-TL-UeS" firstAttribute="firstBaseline" secondItem="PdE-zI-sb0" secondAttribute="firstBaseline" id="dMe-tk-oRu"/>
-                            <constraint firstItem="iwe-fd-Y26" firstAttribute="bottom" secondItem="UgL-Lf-CFt" secondAttribute="bottom" id="dto-dr-RHg"/>
-                            <constraint firstItem="UgL-Lf-CFt" firstAttribute="top" secondItem="X61-2c-yCh" secondAttribute="top" id="eXW-Vl-MO8"/>
-                            <constraint firstItem="xjZ-7A-L5L" firstAttribute="baseline" secondItem="fD8-8v-PLd" secondAttribute="firstBaseline" id="g89-iE-rmc"/>
-                            <constraint firstItem="JBu-2l-qqJ" firstAttribute="baseline" secondItem="0Na-TL-UeS" secondAttribute="baseline" id="h7R-fl-FrN"/>
-                            <constraint firstItem="iwe-fd-Y26" firstAttribute="top" secondItem="mPV-Oi-PEo" secondAttribute="bottom" constant="12" id="hIS-z8-QsN"/>
-                            <constraint firstItem="qyJ-En-Kgm" firstAttribute="trailing" secondItem="sTS-3c-hY7" secondAttribute="trailing" id="hzy-OB-xlA"/>
-                            <constraint firstItem="HpH-MB-tI8" firstAttribute="top" secondItem="MrA-46-gQI" secondAttribute="bottom" constant="12" id="iDQ-T5-wXO"/>
-                            <constraint firstItem="sTS-3c-hY7" firstAttribute="trailing" secondItem="UgL-Lf-CFt" secondAttribute="trailing" id="iOI-Zo-9h7"/>
-                            <constraint firstItem="XMu-dV-4PO" firstAttribute="trailing" secondItem="jUo-s4-P5q" secondAttribute="trailing" id="jZ9-H2-DAB"/>
-                            <constraint firstItem="mPV-Oi-PEo" firstAttribute="leading" secondItem="iwe-fd-Y26" secondAttribute="leading" id="k2U-WR-ZrI"/>
-                            <constraint firstItem="nuM-be-qQI" firstAttribute="top" secondItem="fD8-8v-PLd" secondAttribute="top" id="kDp-WQ-xRc"/>
-                            <constraint firstItem="fD8-8v-PLd" firstAttribute="top" secondItem="9TW-zg-TxN" secondAttribute="bottom" constant="35" id="lQ6-SO-E2F"/>
-                            <constraint firstItem="MrA-46-gQI" firstAttribute="top" secondItem="9TW-zg-TxN" secondAttribute="bottom" constant="34" id="lU6-2m-Rw7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fD8-8v-PLd" secondAttribute="trailing" constant="9" id="lwQ-Uy-kGl"/>
-                            <constraint firstItem="fD8-8v-PLd" firstAttribute="leading" secondItem="nuM-be-qQI" secondAttribute="trailing" constant="12" id="nis-ce-cnU"/>
-                            <constraint firstItem="YMb-DU-3bv" firstAttribute="firstBaseline" secondItem="qyJ-En-Kgm" secondAttribute="firstBaseline" id="oFa-ar-iO2"/>
-                            <constraint firstItem="xjZ-7A-L5L" firstAttribute="trailing" secondItem="JBu-2l-qqJ" secondAttribute="trailing" id="oTh-lx-kIC"/>
-                            <constraint firstItem="PdE-zI-sb0" firstAttribute="leading" secondItem="zvI-YK-Rpb" secondAttribute="leading" id="pBP-lj-Vgq"/>
-                            <constraint firstItem="HpH-MB-tI8" firstAttribute="firstBaseline" secondItem="JBu-2l-qqJ" secondAttribute="firstBaseline" id="pak-fB-zfI"/>
-                            <constraint firstItem="qyJ-En-Kgm" firstAttribute="baseline" secondItem="6kD-Em-5VV" secondAttribute="baseline" id="qj3-un-Oqb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fD8-8v-PLd" secondAttribute="trailing" id="qpV-fv-lad"/>
-                            <constraint firstItem="zvI-YK-Rpb" firstAttribute="leading" secondItem="XMu-dV-4PO" secondAttribute="leading" id="qvt-xn-pH4"/>
-                            <constraint firstItem="iwe-fd-Y26" firstAttribute="top" secondItem="UgL-Lf-CFt" secondAttribute="top" id="r1v-YS-G8m"/>
-                            <constraint firstItem="9TW-zg-TxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rBm-yk-OZ8"/>
-                            <constraint firstItem="mPV-Oi-PEo" firstAttribute="firstBaseline" secondItem="sTS-3c-hY7" secondAttribute="firstBaseline" id="sSX-5A-H2x"/>
-                            <constraint firstItem="nuM-be-qQI" firstAttribute="leading" secondItem="xjZ-7A-L5L" secondAttribute="trailing" constant="12" id="svX-c6-NRl"/>
-                            <constraint firstItem="xjZ-7A-L5L" firstAttribute="leading" secondItem="MrA-46-gQI" secondAttribute="trailing" constant="12" id="thh-Ei-bw2"/>
-                            <constraint firstItem="JBu-2l-qqJ" firstAttribute="top" secondItem="xjZ-7A-L5L" secondAttribute="bottom" constant="11" id="uAB-zc-gSn"/>
-                            <constraint firstItem="fD8-8v-PLd" firstAttribute="leading" secondItem="nuM-be-qQI" secondAttribute="trailing" constant="12" id="uHx-Z6-Cg8"/>
-                            <constraint firstItem="mPV-Oi-PEo" firstAttribute="trailing" secondItem="iwe-fd-Y26" secondAttribute="trailing" id="uyh-lW-mdc"/>
-                            <constraint firstItem="HpH-MB-tI8" firstAttribute="leading" secondItem="YMb-DU-3bv" secondAttribute="leading" id="vFP-GP-MXM"/>
-                            <constraint firstItem="9TW-zg-TxN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="vuN-jV-qe8"/>
-                            <constraint firstItem="qyJ-En-Kgm" firstAttribute="leading" secondItem="sTS-3c-hY7" secondAttribute="leading" id="x35-CD-hXX"/>
-                            <constraint firstItem="9TW-zg-TxN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xgd-HU-KNc"/>
-                            <constraint firstItem="UgL-Lf-CFt" firstAttribute="firstBaseline" secondItem="jUo-s4-P5q" secondAttribute="firstBaseline" id="ym6-3Z-ONs"/>
-                            <constraint firstItem="xjZ-7A-L5L" firstAttribute="top" secondItem="9TW-zg-TxN" secondAttribute="bottom" constant="35" id="zS4-Td-nqh"/>
-                            <constraint firstItem="YMb-DU-3bv" firstAttribute="top" secondItem="HpH-MB-tI8" secondAttribute="bottom" constant="12" id="zn7-Tv-J4L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0kw-j4-IEF" secondAttribute="trailing" id="0v6-r0-Hm1"/>
+                            <constraint firstItem="0kw-j4-IEF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5xJ-9s-Pex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0kw-j4-IEF" secondAttribute="bottom" id="UCr-uA-CH0"/>
+                            <constraint firstItem="0kw-j4-IEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VQI-VX-Pfg"/>
+                            <constraint firstItem="0kw-j4-IEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="ZCH-3P-i8M"/>
+                            <constraint firstItem="0kw-j4-IEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b23-Le-rcs"/>
+                            <constraint firstItem="0kw-j4-IEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="hDP-Kh-TEe"/>
+                            <constraint firstItem="0kw-j4-IEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zIU-Rg-Wwy"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="77.678571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

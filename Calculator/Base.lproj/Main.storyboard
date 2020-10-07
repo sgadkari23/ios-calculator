@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,6 +50,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQv-Lk-FIN"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am7-zV-Ut4">
                                                         <rect key="frame" x="101.5" y="0.0" width="89.5" height="87.5"/>
@@ -63,6 +66,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ys3-BD-PYM"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUk-AO-AIE">
                                                         <rect key="frame" x="203" y="0.0" width="89.5" height="87.5"/>
@@ -76,6 +82,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqP-D5-8bv"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-uE-6MB">
                                                         <rect key="frame" x="304.5" y="0.0" width="89.5" height="87.5"/>
@@ -89,6 +98,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x3I-od-QFX"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -107,6 +119,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="okC-HL-bz2"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-iJ-NpJ">
                                                         <rect key="frame" x="101.5" y="0.0" width="89.5" height="87.5"/>
@@ -120,6 +135,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="50w-z3-yaS"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8X-9V-ObM">
                                                         <rect key="frame" x="203" y="0.0" width="89.5" height="87.5"/>
@@ -133,6 +151,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6n-eK-s0O"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jo7-sj-26W">
                                                         <rect key="frame" x="304.5" y="0.0" width="89.5" height="87.5"/>
@@ -146,6 +167,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrD-W6-VqU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -164,6 +188,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ua-cr-yqC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzO-Ta-0yn">
                                                         <rect key="frame" x="101.5" y="0.0" width="89.5" height="87.5"/>
@@ -177,6 +204,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zk-86-OOw"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekI-ac-fOF">
                                                         <rect key="frame" x="203" y="0.0" width="89.5" height="87.5"/>
@@ -190,11 +220,14 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ikQ-v8-PaM"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRg-rO-HEm">
                                                         <rect key="frame" x="304.5" y="0.0" width="89.5" height="87.5"/>
                                                         <color key="backgroundColor" red="0.54509803921568623" green="0.23529411764705882" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="47"/>
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -203,6 +236,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fS9-sq-Shf"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -221,6 +257,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zur-hq-tLB"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="463-yy-0PY">
                                                         <rect key="frame" x="101.5" y="0.0" width="89.5" height="87"/>
@@ -234,6 +273,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kdl-r0-hbZ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTc-7r-91u">
                                                         <rect key="frame" x="203" y="0.0" width="89.5" height="87"/>
@@ -247,6 +289,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qjy-cx-mjt"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHO-4A-pvC">
                                                         <rect key="frame" x="304.5" y="0.0" width="89.5" height="87"/>
@@ -260,6 +305,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZM-Bl-6we"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -278,6 +326,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOb-yI-a7L"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCr-4w-xSp">
                                                         <rect key="frame" x="101.5" y="0.0" width="89.5" height="87.5"/>
@@ -291,6 +342,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HHm-sI-Uvf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDA-V4-PE6">
                                                         <rect key="frame" x="203" y="0.0" width="89.5" height="87.5"/>
@@ -304,6 +358,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZX-Dn-3qe"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXd-hw-NTU">
                                                         <rect key="frame" x="304.5" y="0.0" width="89.5" height="87.5"/>
@@ -338,6 +395,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="91w-QH-BH8" secondAttribute="trailing" constant="10" id="U0H-ts-4Gc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="CPr-CR-Ruw" id="01j-rM-g8p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

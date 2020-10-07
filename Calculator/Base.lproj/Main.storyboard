@@ -51,7 +51,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQv-Lk-FIN"/>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kU1-tp-0ti"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am7-zV-Ut4">
@@ -67,7 +67,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ys3-BD-PYM"/>
+                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1A-RN-Vq8"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUk-AO-AIE">

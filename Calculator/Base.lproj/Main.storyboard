@@ -51,7 +51,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7e-r8-gTj"/>
+                                                            <action selector="clearResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yO-WN-KUz"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am7-zV-Ut4">
@@ -83,7 +83,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="onArithmethicButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqP-D5-8bv"/>
+                                                            <action selector="percentageButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhP-wF-tdz"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-uE-6MB">

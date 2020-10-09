@@ -16,12 +16,15 @@ class ViewController: UIViewController {
     var rightOperand:Double=0.0
     var onScreenNumber:Double = 0.0
     var finalSummation:Double=0.0
+    var calculationFlag:Bool = false
+    var equalsto = false
     
     var currentArithmeticOperation = ""
     
     var takeOperand:Bool=true
     var isTypingNumberFinished:Bool=false
-    var  calculationFlag:Bool = false
+    
+    
     //var isEqual
     
     
@@ -35,73 +38,74 @@ class ViewController: UIViewController {
     
     @IBAction func onNumberButton_Pressed(_ sender: UIButton) {
         
-        if takeOperand{
+        if !isTypingNumberFinished{
             resultLabel.text! = sender.titleLabel!.text!
-            onScreenNumber = Double(resultLabel.text!)!
-            takeOperand=false
+            //onScreenNumber = Double(resultLabel.text!)!
+            isTypingNumberFinished = true
         }else{
             resultLabel.text! += sender.titleLabel!.text!
-            onScreenNumber = Double(resultLabel.text!)!
+            
         }
+        onScreenNumber = Double(resultLabel.text!)!
         print("operand 2:\(onScreenNumber)")
     }
     
     
-    /*@IBAction func clearResult(_ sender: UIButton) {
+    @IBAction func clearResult(_ sender: UIButton) {
         
         resultLabel.text! = "0"
         calculationFlag = false
         isTypingNumberFinished = false
-        takeOperand = true
+       // takeOperand = true
         leftOperand = 0.0
         rightOperand = 0.0
         finalSummation = 0.0
         currentArithmeticOperation = ""
 
-    } */
+    }
     
     @IBAction func deleteButton(_ sender: UIButton) {
         
         
     }
     
+    
+    @IBAction func percentageButton_Pressed(_ sender: UIButton) {
+        finalSummation = Double(resultLabel.text!)! * 0.01
+        leftOperand = finalSummation
+        resultLabel.text! = String(leftOperand)
+        calculationFlag = true
+        isTypingNumberFinished = false
+        takeOperand = true
+        currentArithmeticOperation = sender.titleLabel!.text!
+    }
+    
+    
     @IBAction func onArithmethicButton_Pressed(_ sender: UIButton) {
         
         if calculationFlag {
             
-            switch currentArithmeticOperation {
+            switch sender.titleLabel!.text! {
             case "+","-","x","÷":
-                rightOperand = Double(onScreenNumber)
-                finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
-                leftOperand = finalSummation
-                resultLabel.text! = String(leftOperand)
-                currentArithmeticOperation = sender.titleLabel!.text!
-                
+                if !equalsto {
+                    rightOperand = onScreenNumber
+                    finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
+                    leftOperand = finalSummation
+                    currentArithmeticOperation = sender.titleLabel!.text!
+                    resultLabel.text! = String(leftOperand)
+                   // takeOperand = true
+                    
+                }else{
+                    leftOperand = Double(resultLabel.text!)!
+                    currentArithmeticOperation = sender.titleLabel!.text!
+                }
             case "=":
                 finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
                 resultLabel.text! = String(finalSummation)
                 calculationFlag = false
                 takeOperand = true
+                equalsto = true
             
-            case "C":
-                calculationFlag = false
-                isTypingNumberFinished = false
-                takeOperand = true
-                leftOperand = 0.0
-                rightOperand = 0.0
-                finalSummation = 0.0
-                currentArithmeticOperation = ""
-                resultLabel.text! = "0"
-                
-           /* case "⌫" :
-                if (resultLabel.text!.count <= 1) || (resultLabel.text! == "-")
-                {
-                    resultLabel.text! = "0"
-                    
-                }else{
-                    resultLabel.text!.popLast()
-                }
-                */
             default:
                 resultLabel.text! = "0"
             }
@@ -111,11 +115,10 @@ class ViewController: UIViewController {
             leftOperand = Double(resultLabel.text!)!
             currentArithmeticOperation = sender.titleLabel!.text!
             calculationFlag = true
-            takeOperand = true
-            
+            //takeOperand = true
         }
         
-        isTypingNumberFinished = true
+        isTypingNumberFinished = false
         
      }
 

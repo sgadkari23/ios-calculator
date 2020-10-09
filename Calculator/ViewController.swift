@@ -15,20 +15,15 @@ class ViewController: UIViewController {
     var leftOperand:Double = 0.0
     var rightOperand:Double=0.0
     var onScreenNumber:Double = 0.0
-    var finalResult:Double=0.0
+    var finalSummation:Double=0.0
     
     var currentArithmeticOperation=""
     
     var takeOperand:Bool=true
     var isTypingNumberFinished:Bool=false
     var  calculationFlag:Bool = false
-    var isEqual
+    //var isEqual
     
-    
-    
-    //if (!isFirstNum) {
-        
-    //}
     
     @IBOutlet weak var resultLabel: UILabel!
     
@@ -72,15 +67,33 @@ class ViewController: UIViewController {
         */
     
         
-        if currentArithmeticOperation != "="{
-             print("Summation")
+        if calculationFlag {
+            
+            switch currentArithmeticOperation {
+            case "+","-","*","÷" :
+                rightOperand = Double(onScreenNumber)
+                finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
+                leftOperand = finalSummation
+                resultLabel.text! = String(leftOperand)
+                currentArithmeticOperation = sender.titleLabel!.text!
+                
+            case "=":
+                finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
+                resultLabel.text! = String(finalSummation)
+                calculationFlag = false
+                takeOperand = true
+                
+            default:
+                resultLabel.text! = "0"
+            }
+            
         }
         else{
+            leftOperand = Double(resultLabel.text!)!
             currentArithmeticOperation = sender.titleLabel!.text!
             calculationFlag = true
             takeOperand = true
-            leftOperand = Double(resultLabel.text!)!
-            print("operand 1:\(leftOperand)")
+            
         }
         
         isTypingNumberFinished = true
@@ -88,17 +101,17 @@ class ViewController: UIViewController {
      }
 
     
-    func calculate(firstOperand:Double,secondOperand:Double) -> Double{
+    func calculate(firstNum:Double,secondNum:Double) -> Double{
         var total:Double = 0.0
         switch currentArithmeticOperation{
         case "+":
-            total = firstOperand + secondOperand
+            total = firstNum + secondNum
         case "-":
-            total = firstOperand - secondOperand
+            total = firstNum - secondNum
         case "*":
-            total = firstOperand * secondOperand
+            total = firstNum * secondNum
         case "÷":
-            total = firstOperand / secondOperand
+            total = firstNum / secondNum
         default:
             break
         }

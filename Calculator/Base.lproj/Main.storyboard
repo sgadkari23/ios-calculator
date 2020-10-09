@@ -359,7 +359,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="onNumberButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZX-Dn-3qe"/>
+                                                            <action selector="plusMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBt-kI-nCt"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXd-hw-NTU">

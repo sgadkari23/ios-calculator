@@ -66,9 +66,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func deleteButton(_ sender: UIButton) {
-        
-        
+        if (resultLabel.text!.count <= 1) || (resultLabel.text! == "-"){
+            resultLabel.text! = "0"
+        }
+        else{
+            resultLabel.text!.remove(at: resultLabel.text!.index(before: resultLabel.text!.endIndex))
+            onScreenNumber = Double(resultLabel.text!)!
+        }
     }
+    
+    @IBAction func plusMinusButton(_ sender: UIButton) {
+    
+        onScreenNumber = Double(resultLabel.text!)! * -1
+        resultLabel.text! = String(onScreenNumber)
+    }
+    
     
     
     @IBAction func addDecimal(_ sender: UIButton) {
@@ -84,7 +96,7 @@ class ViewController: UIViewController {
     @IBAction func percentageButton_Pressed(_ sender: UIButton) {
         finalSummation = Double(resultLabel.text!)! * 0.01
         leftOperand = finalSummation
-        resultLabel.text! = String(leftOperand)
+        resultLabel.text! = String(format:"%.8f",leftOperand)
         calculationFlag = true
         isTypingNumberFinished = false
         takeOperand = true
@@ -103,9 +115,11 @@ class ViewController: UIViewController {
                     finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
                     leftOperand = finalSummation
                     currentArithmeticOperation = sender.titleLabel!.text!
-                    if !decimal && !String(finalSummation).contains(".") {
+                    if floor(finalSummation) == finalSummation {
+                        // Is an integer
                         resultLabel.text! = String(Int(leftOperand))
                     }else{
+                        // contains decimal point
                         resultLabel.text! = String(leftOperand)
                     }
                    // takeOperand = true
@@ -114,13 +128,16 @@ class ViewController: UIViewController {
                     leftOperand = Double(resultLabel.text!)!
                     currentArithmeticOperation = sender.titleLabel!.text!
                 }
+            
             case "=":
                 rightOperand = onScreenNumber
                 finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
-                if !decimal && !String(finalSummation).contains(".") {
+                if floor(finalSummation) == finalSummation {
+                    // Is an integer
                     resultLabel.text! = String(Int(finalSummation))
-                }else{
-                    resultLabel.text! = String(format:".4f",finalSummation)
+                } else{
+                    // Contains decimal points
+                    resultLabel.text! = String(format:"%.8f",finalSummation)
                 }
                 calculationFlag = false
                 isTypingNumberFinished = false

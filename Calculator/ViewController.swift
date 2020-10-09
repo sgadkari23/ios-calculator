@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     var isTypingNumberFinished:Bool=false
     
     
-    //var isEqual
+    var decimal:Bool = false
     
     
     @IBOutlet weak var resultLabel: UILabel!
@@ -61,11 +61,22 @@ class ViewController: UIViewController {
         rightOperand = 0.0
         finalSummation = 0.0
         currentArithmeticOperation = ""
+        decimal = false
 
     }
     
     @IBAction func deleteButton(_ sender: UIButton) {
         
+        
+    }
+    
+    
+    @IBAction func addDecimal(_ sender: UIButton) {
+        if(!decimal && !resultLabel.text!.contains(".")){
+            resultLabel.text! = resultLabel.text!+"."
+            onScreenNumber = Double(resultLabel.text!)!
+            decimal = true
+        }
         
     }
     
@@ -92,7 +103,11 @@ class ViewController: UIViewController {
                     finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
                     leftOperand = finalSummation
                     currentArithmeticOperation = sender.titleLabel!.text!
-                    resultLabel.text! = String(leftOperand)
+                    if !decimal && !String(finalSummation).contains(".") {
+                        resultLabel.text! = String(Int(leftOperand))
+                    }else{
+                        resultLabel.text! = String(leftOperand)
+                    }
                    // takeOperand = true
                     
                 }else{
@@ -100,11 +115,17 @@ class ViewController: UIViewController {
                     currentArithmeticOperation = sender.titleLabel!.text!
                 }
             case "=":
+                rightOperand = onScreenNumber
                 finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
-                resultLabel.text! = String(finalSummation)
+                if !decimal && !String(finalSummation).contains(".") {
+                    resultLabel.text! = String(Int(finalSummation))
+                }else{
+                    resultLabel.text! = String(format:".4f",finalSummation)
+                }
                 calculationFlag = false
-                takeOperand = true
+                isTypingNumberFinished = false
                 equalsto = true
+                decimal = false
             
             default:
                 resultLabel.text! = "0"
@@ -115,11 +136,11 @@ class ViewController: UIViewController {
             leftOperand = Double(resultLabel.text!)!
             currentArithmeticOperation = sender.titleLabel!.text!
             calculationFlag = true
-            //takeOperand = true
+            decimal = false
         }
         
         isTypingNumberFinished = false
-        
+        decimal = false
      }
 
     

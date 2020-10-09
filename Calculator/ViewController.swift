@@ -54,19 +54,6 @@ class ViewController: UIViewController {
 
     @IBAction func onArithmethicButton_Pressed(_ sender: UIButton) {
         
-      
-        //print(sender.titleLabel!.text!);
-        //resultLabel.text! += sender.titleLabel!.text!
-        
-       
-        /*
-        if (sender.titleLabel!.text! == "+") {
-            var oper1 = resultLabel.text!
-            //print(sender.titleLabel!.text!)
-        }
-        */
-    
-        
         if calculationFlag {
             
             switch currentArithmeticOperation {
@@ -82,7 +69,21 @@ class ViewController: UIViewController {
                 resultLabel.text! = String(finalSummation)
                 calculationFlag = false
                 takeOperand = true
+            
+            case "C":
+                resultLabel.text! = "0"
+                calculationFlag = false
+                takeOperand = true
                 
+            /*case "⌫" :
+                if (resultLabel.text!.count <= 1) || (resultLabel.text! == "-")
+                {
+                    resultLabel.text! = "0"
+                    
+                }else{
+                    resultLabel.text!.popLast()
+                }
+                */
             default:
                 resultLabel.text! = "0"
             }
@@ -115,7 +116,7 @@ class ViewController: UIViewController {
         default:
             break
         }
-        return sum
+        return total
     }
 
     

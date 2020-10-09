@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     var onScreenNumber:Double = 0.0
     var displayNumber:Double = 0.0
     var isFirstNumber:Bool=false
-    var arithmeticOperation=""
+    var finalResult:Double=0.0
+    var setOperator=""
+    var isTypingNumberFinished:Bool=false
     
     //if (!isFirstNum) {
         
@@ -37,15 +39,26 @@ class ViewController: UIViewController {
         /*if (isFirstNum==false) {
             resultLabel.text = "0"
         }*/
-        if !isFirstNumber{
-            previousNumber = Double(sender.titleLabel!.text!)!
-            resultLabel.text! = String(previousNumber)
-            isFirstNumber=true
-        }else{
-            resultLabel.text! += sender.titleLabel!.text!
+        if !isTypingNumberFinished{
+            if !isFirstNumber{
+                previousNumber = Double(sender.titleLabel!.text!)!
+                resultLabel.text! = sender.titleLabel!.text!
+                isFirstNumber=true
+            }else{
+                resultLabel.text! += sender.titleLabel!.text!
+                previousNumber = Double(resultLabel.text!)!
+             }
         }
-        
-        
+        else{
+            if (String(displayNumber)=="0.0") {
+                resultLabel.text! = sender.titleLabel!.text!
+                displayNumber = Double(resultLabel.text!)!
+            }
+            else{
+                resultLabel.text! += sender.titleLabel!.text!
+                displayNumber = Double(resultLabel.text!)!
+            }
+        }
       
     }
     
@@ -64,15 +77,30 @@ class ViewController: UIViewController {
             //print(sender.titleLabel!.text!)
         }
         */
-     /*
+    
+    
         switch sender.titleLabel!.text! {
-        case "=":
-           // resultLabel.text! += sender.titleLabel!.text!
-            
+        case "+":
+            setOperator = "add"
+            isTypingNumberFinished=true
+            isFirstNumber=true
+            return
         default:
             resultLabel.text! += sender.titleLabel!.text!
         }
-   */
+        
+        
+        switch setOperator {
+        case "add":
+            finalResult = previousNumber + displayNumber
+            return
+        case "=":
+            resultLabel.text! = String(finalResult)
+            return
+        default:
+            resultLabel.text! += sender.titleLabel!.text!
+        }
+   
      }
 
     

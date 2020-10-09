@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var onScreenNumber:Double = 0.0
     var finalSummation:Double=0.0
     
-    var currentArithmeticOperation=""
+    var currentArithmeticOperation = ""
     
     var takeOperand:Bool=true
     var isTypingNumberFinished:Bool=false
@@ -35,11 +35,6 @@ class ViewController: UIViewController {
     
     @IBAction func onNumberButton_Pressed(_ sender: UIButton) {
         
-       // print(sender.titleLabel!.text!);
-        
-        /*if (isFirstNum==false) {
-            resultLabel.text = "0"
-        }*/
         if takeOperand{
             resultLabel.text! = sender.titleLabel!.text!
             onScreenNumber = Double(resultLabel.text!)!
@@ -51,13 +46,31 @@ class ViewController: UIViewController {
         print("operand 2:\(onScreenNumber)")
     }
     
+    
+    /*@IBAction func clearResult(_ sender: UIButton) {
+        
+        resultLabel.text! = "0"
+        calculationFlag = false
+        isTypingNumberFinished = false
+        takeOperand = true
+        leftOperand = 0.0
+        rightOperand = 0.0
+        finalSummation = 0.0
+        currentArithmeticOperation = ""
 
+    } */
+    
+    @IBAction func deleteButton(_ sender: UIButton) {
+        
+        
+    }
+    
     @IBAction func onArithmethicButton_Pressed(_ sender: UIButton) {
         
         if calculationFlag {
             
             switch currentArithmeticOperation {
-            case "+","-","*","÷" :
+            case "+","-","x","÷":
                 rightOperand = Double(onScreenNumber)
                 finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
                 leftOperand = finalSummation
@@ -71,11 +84,16 @@ class ViewController: UIViewController {
                 takeOperand = true
             
             case "C":
-                resultLabel.text! = "0"
                 calculationFlag = false
+                isTypingNumberFinished = false
                 takeOperand = true
+                leftOperand = 0.0
+                rightOperand = 0.0
+                finalSummation = 0.0
+                currentArithmeticOperation = ""
+                resultLabel.text! = "0"
                 
-            /*case "⌫" :
+           /* case "⌫" :
                 if (resultLabel.text!.count <= 1) || (resultLabel.text! == "-")
                 {
                     resultLabel.text! = "0"
@@ -109,7 +127,7 @@ class ViewController: UIViewController {
             total = firstNum + secondNum
         case "-":
             total = firstNum - secondNum
-        case "*":
+        case "x":
             total = firstNum * secondNum
         case "÷":
             total = firstNum / secondNum

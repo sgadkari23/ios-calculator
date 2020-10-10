@@ -5,66 +5,64 @@
 //  Created by Supriya Gadkari on 09/27/20.
 //  Student ID: 301140872
 //  App Description: A Simple arithmetic calculator built using storyboard UI and swift
-//  App version: 0.1
+//  App version: 0.2
 //  XCode version: 12.0.1
 
 import UIKit
 
 class ViewController: UIViewController {
   
+    // Storing left and right operands
     var leftOperand:Double = 0.0
-    var rightOperand:Double=0.0
+    var rightOperand:Double = 0.0
+    // Displayed current subtotal
     var onScreenNumber:Double = 0.0
+    // Final calculation on press of equals
     var finalSummation:Double=0.0
+    // Check if user is entering second (or more) operand
     var calculationFlag:Bool = false
+    // Equal to pressed to calculate final result
     var equalsto = false
-    
+    // Track of last operator
     var currentArithmeticOperation = ""
-    
-    var takeOperand:Bool=true
+    // Check if user is typing operand
     var isTypingNumberFinished:Bool=false
-    
-    
+    // If input contains decimal point
     var decimal:Bool = false
     
-    
     @IBOutlet weak var resultLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         resultLabel.text! = "0"
     }
     
+    // 0-9 number button pressed, display number on screen
     @IBAction func onNumberButton_Pressed(_ sender: UIButton) {
-        
         if !isTypingNumberFinished{
             resultLabel.text! = sender.titleLabel!.text!
-            //onScreenNumber = Double(resultLabel.text!)!
             isTypingNumberFinished = true
         }else{
             resultLabel.text! += sender.titleLabel!.text!
-            
         }
         onScreenNumber = Double(resultLabel.text!)!
-        print("operand 2:\(onScreenNumber)")
     }
     
-    
+    // Clear result button, reset all
     @IBAction func clearResult(_ sender: UIButton) {
-        
         resultLabel.text! = "0"
         calculationFlag = false
         isTypingNumberFinished = false
-       // takeOperand = true
+        equalsto = false
         leftOperand = 0.0
         rightOperand = 0.0
         finalSummation = 0.0
+        onScreenNumber = 0.0
         currentArithmeticOperation = ""
         decimal = false
-
     }
     
+    // Delete button, remove last character from the displayed on screen value
     @IBAction func deleteButton(_ sender: UIButton) {
         if (resultLabel.text!.count <= 1) || (resultLabel.text! == "-"){
             resultLabel.text! = "0"
@@ -75,35 +73,38 @@ class ViewController: UIViewController {
         }
     }
     
+    // Plus minus button, change positive to negative and vice versa of displayed value
     @IBAction func plusMinusButton(_ sender: UIButton) {
-    
-        onScreenNumber = Double(resultLabel.text!)! * -1
-        resultLabel.text! = String(onScreenNumber)
+        leftOperand = Double(resultLabel.text!)! * -1
+        
+        if floor(leftOperand) == leftOperand {
+            resultLabel.text! = String(Int(leftOperand))
+        }
+        else {
+            resultLabel.text! = String(leftOperand)
+        }
     }
     
-    
-    
+    // Decimal pressed
     @IBAction func addDecimal(_ sender: UIButton) {
         if(!decimal && !resultLabel.text!.contains(".")){
             resultLabel.text! = resultLabel.text!+"."
             onScreenNumber = Double(resultLabel.text!)!
             decimal = true
         }
-        
     }
     
-    
+    // Percentage button, display percent of on screen value
     @IBAction func percentageButton_Pressed(_ sender: UIButton) {
         finalSummation = Double(resultLabel.text!)! * 0.01
         leftOperand = finalSummation
         resultLabel.text! = String(format:"%.8f",leftOperand)
         calculationFlag = true
         isTypingNumberFinished = false
-        takeOperand = true
         currentArithmeticOperation = sender.titleLabel!.text!
     }
     
-    
+    // Operator button pressed
     @IBAction func onArithmethicButton_Pressed(_ sender: UIButton) {
         
         if calculationFlag {
@@ -115,16 +116,14 @@ class ViewController: UIViewController {
                     finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
                     leftOperand = finalSummation
                     currentArithmeticOperation = sender.titleLabel!.text!
-                    if floor(finalSummation) == finalSummation {
+                    if floor(leftOperand) == leftOperand {
                         // Is an integer
                         resultLabel.text! = String(Int(leftOperand))
-                    }else{
+                    }else {
                         // contains decimal point
-                        resultLabel.text! = String(leftOperand)
+                        resultLabel.text! = String(format:"%.8f",leftOperand)
                     }
-                   // takeOperand = true
-                    
-                }else{
+                } else {
                     leftOperand = Double(resultLabel.text!)!
                     currentArithmeticOperation = sender.titleLabel!.text!
                 }
@@ -147,7 +146,6 @@ class ViewController: UIViewController {
             default:
                 resultLabel.text! = "0"
             }
-            
         }
         else{
             leftOperand = Double(resultLabel.text!)!
@@ -155,12 +153,11 @@ class ViewController: UIViewController {
             calculationFlag = true
             decimal = false
         }
-        
         isTypingNumberFinished = false
         decimal = false
      }
 
-    
+    // Calculation function
     func calculate(firstNum:Double,secondNum:Double) -> Double{
         var total:Double = 0.0
         switch currentArithmeticOperation{
@@ -177,6 +174,4 @@ class ViewController: UIViewController {
         }
         return total
     }
-
-    
 }

@@ -104,6 +104,8 @@ class ViewController: UIViewController {
         currentArithmeticOperation = sender.titleLabel!.text!
     }
     
+    
+    
     // Operator button pressed
     @IBAction func onArithmethicButton_Pressed(_ sender: UIButton) {
         

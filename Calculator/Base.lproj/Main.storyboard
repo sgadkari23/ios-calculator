@@ -97,7 +97,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="percentageButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhP-wF-tdz"/>
+                                                            <action selector="additionalFunationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUj-aK-NSS"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-uE-6MB">
@@ -134,6 +134,9 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                        <connections>
+                                                            <action selector="additionalFunationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0a-TK-x32"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4y-Vi-gOc">
                                                         <rect key="frame" x="160" y="0.0" width="148" height="36.5"/>
@@ -214,6 +217,9 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                        <connections>
+                                                            <action selector="additionalFunationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPg-Fo-2bC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiP-WO-8RP">
                                                         <rect key="frame" x="160" y="0.0" width="148" height="36.5"/>
@@ -296,6 +302,9 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                        <connections>
+                                                            <action selector="additionalFunationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuF-nb-28L"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="np8-Y4-Vxt">
                                                         <rect key="frame" x="160" y="0.0" width="148" height="36"/>
@@ -378,6 +387,9 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                        <connections>
+                                                            <action selector="additionalFunationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wCi-hw-nAp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-1l-IBU">
                                                         <rect key="frame" x="160" y="0.0" width="148" height="36.5"/>

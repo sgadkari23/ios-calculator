@@ -42,7 +42,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="36.5"/>
                                                         <color key="backgroundColor" red="0.54901960780000003" green="0.23529411759999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                        <state key="normal" title="∏">
+                                                        <state key="normal" title="Rand">
                                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -51,6 +51,9 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                        <connections>
+                                                            <action selector="additionalFunationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVs-yT-Egv"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgB-tp-BdF">
                                                         <rect key="frame" x="160" y="0.0" width="148" height="36.5"/>

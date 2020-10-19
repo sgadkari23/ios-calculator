@@ -128,11 +128,20 @@ class ViewController: UIViewController {
             finalSummation = tan(Double(resultLabel.text!)!)
         case "√x":
             finalSummation = sqrt(Double(resultLabel.text!)!)
+        case "Rand":
+            finalSummation = Double.random(in: 0..<1)
         default :
             resultLabel.text! = "0"
         }
         leftOperand = finalSummation
-        resultLabel.text! = String(format:"%.8f",leftOperand)
+        if floor(finalSummation) == finalSummation {
+            // Is an integer
+            resultLabel.text! = String(Int(finalSummation))
+        } else{
+            // Contains decimal points
+            resultLabel.text! = String(format:"%.8f",finalSummation)
+        }
+        //resultLabel.text! = String(format:"%.8f",leftOperand)
         calculationFlag = true
         isTypingNumberFinished = false
         currentArithmeticOperation = sender.titleLabel!.text!

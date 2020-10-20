@@ -6,7 +6,7 @@
 //  Student ID: 301140872
 //  App Description: A Simple arithmetic calculator built using storyboard UI and swift
 //  App version: 0.2
-//  XCode version: 12.0.1
+//  XCode version: 12.0.2
 
 import UIKit
 
@@ -85,36 +85,7 @@ class ViewController: UIViewController {
         }
     }
     
-  /*  @IBAction func sinButton(_ sender: UIButton) {
-        finalSummation = sin(Double(resultLabel.text!)!)
-        leftOperand = finalSummation
-        resultLabel.text! = String(finalSummation)
-        calculationFlag = true
-        isTypingNumberFinished = false
-        currentArithmeticOperation = sender.titleLabel!.text!
-    }
-    
-    @IBAction func cosButton(_ sender: UIButton) {
-        
-        finalSummation = cos(Double(resultLabel.text!)!)
-        leftOperand = finalSummation
-        resultLabel.text! = String(finalSummation)
-        calculationFlag = true
-        isTypingNumberFinished = false
-        currentArithmeticOperation = sender.titleLabel!.text!
-    }
-     
-     // Percentage button, display percent of on screen value
-     @IBAction func percentageButton_Pressed(_ sender: UIButton) {
-         finalSummation = Double(resultLabel.text!)! * 0.01
-         leftOperand = finalSummation
-         resultLabel.text! = String(format:"%.8f",leftOperand)
-         calculationFlag = true
-         isTypingNumberFinished = false
-         currentArithmeticOperation = sender.titleLabel!.text!
-     }
-    */
-    
+    // additional operation function
     @IBAction func additionalFunationButton(_ sender: UIButton) {
         
         switch sender.titleLabel!.text! {
@@ -124,8 +95,8 @@ class ViewController: UIViewController {
             finalSummation = sin(Double(resultLabel.text!)!)
         case "Cos":
             finalSummation = cos(Double(resultLabel.text!)!)
-        case "Tan":
-            finalSummation = tan(Double(resultLabel.text!)!)
+        case "eˣ":
+            finalSummation = exp(Double(resultLabel.text!)!)
         case "√x":
             finalSummation = sqrt(Double(resultLabel.text!)!)
         case "Rand":

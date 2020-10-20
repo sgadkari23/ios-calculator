@@ -127,7 +127,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDe-gB-ivG">
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="36.5"/>
                                                         <color key="backgroundColor" red="0.54901960780000003" green="0.23529411759999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <state key="normal" title="√x">
                                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                         </state>
@@ -213,6 +213,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qru-kN-uc6">
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="36.5"/>
                                                         <color key="backgroundColor" red="0.54901960780000003" green="0.23529411759999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <state key="normal" title="Sin"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -296,6 +297,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2K-uW-qNv">
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="36"/>
                                                         <color key="backgroundColor" red="0.54901960780000003" green="0.23529411759999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <state key="normal" title="Cos">
                                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                         </state>
@@ -381,7 +383,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1x-3W-kJ9">
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="36.5"/>
                                                         <color key="backgroundColor" red="0.54901960780000003" green="0.23529411759999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Tan">
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <state key="normal" title="eˣ">
                                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>

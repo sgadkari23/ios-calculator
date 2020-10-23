@@ -129,6 +129,30 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func onEqualsButtonPressed(_ sender: UIButton) {
+        if(rightOperand == 0.0 && currentArithmeticOperation != ""){
+            rightOperand = onScreenNumber
+            finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
+            
+        }else{
+            rightOperand = Double(resultLabel.text!)!
+            //leftOperand = onScreenNumber
+            finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
+        }
+        if floor(finalSummation) == finalSummation {
+            // Is an integer
+            resultLabel.text! = String(Int(finalSummation))
+        } else{
+            // Contains decimal points
+            resultLabel.text! = String(format:"%.8f",finalSummation)
+        }
+        calculationFlag = false
+        isTypingNumberFinished = false
+        equalsto = true
+        decimal = false
+    }
+    
+    
     // Operator button pressed
     @IBAction func onArithmethicButton_Pressed(_ sender: UIButton) {
         
@@ -152,7 +176,7 @@ class ViewController: UIViewController {
                     leftOperand = Double(resultLabel.text!)!
                     currentArithmeticOperation = sender.titleLabel!.text!
                 }
-            
+            /*
             case "=":
                 rightOperand = onScreenNumber
                 finalSummation = calculate(firstNum:leftOperand, secondNum:rightOperand)
@@ -163,11 +187,11 @@ class ViewController: UIViewController {
                     // Contains decimal points
                     resultLabel.text! = String(format:"%.8f",finalSummation)
                 }
-                calculationFlag = false
-                isTypingNumberFinished = false
-                equalsto = true
-                decimal = false
-            
+                   calculationFlag = false
+                    isTypingNumberFinished = false
+                    equalsto = true
+                    decimal = false
+               */
             default:
                 resultLabel.text! = "0"
             }
